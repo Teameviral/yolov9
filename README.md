@@ -88,5 +88,20 @@ python3 detect.py --weights yolov9/ObjectDetectionModels/weights/gelan-c.pt --co
 Now you will see the result - Make sure that you write the path in correct format.
 
 ## Train Your Model
+Train using Weights of YOLOV9-c.pt Model:
+```
+%cd {HOME}/yolov9
+
+!python train_dual.py \
+--batch 8 --epochs 25 --img 640 --device 0 --min-items 0 --close-mosaic 15 \
+--data {dataset.location}/data.yaml \
+--weights /content/yolov9/ObjectDetectionModels/weights/yolov9-c.pt \
+--cfg models/detect/yolov9-c.yaml \
+--hyp hyp.scratch-high.yaml
+```
+
+Train using weights of gelan-c.pt
+
+```
 
 
