@@ -1,0 +1,18 @@
+names:
+- 100IndianRupees
+- 10IndianRupees
+- 200IndianRupees
+- 20IndianRupees
+- 500IndianRupees
+- 50IndianRupees
+- 5IndianRupees
+nc: 7
+roboflow:
+  license: CC BY 4.0
+  project: notedetection-7foeq
+  url: https://universe.roboflow.com/indiancurrency-gyydi/notedetection-7foeq/dataset/4
+  version: 4
+  workspace: indiancurrency-gyydi
+test: ../test/images
+train: NoteDetection-4/train/images
+val: NoteDetection-4/valid/images
