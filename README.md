@@ -79,10 +79,14 @@ Run it to test your model
 ```
 python3 detect.py --weights yolov9/ObjectDetectionModels/weights/gelan-c.pt --conf 0.1 --source 0 yolov9/test1.jpg --device 0
 ```
-
+CPU Version
 ```
 python3 detect.py --weights yolov9/ObjectDetectionModels/weights/gelan-c.pt --conf 0.1 --source 0 yolov9/test1.jpg --device cpu
 
 ```
 
 Now you will see the result - Make sure that you write the path in correct format.
+
+## Train Your Model
+
+
