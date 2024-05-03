@@ -128,7 +128,10 @@ def run(
                 # Print results
                 for c in det[:, 5].unique():
                     n = (det[:, 5] == c).sum()  # detections per class
-                    s += f"{n} {names[int(c)]}{'s' * (n > 1)}, "  # add to string
+                    #s += f"{n} {names[int(c)]}{'s' * (n > 1)}, "  # add to string
+                    detected_objects_output = f"{n} {names[int(c)]}{'s' * (n > 1)}, "  # formatted output
+                    s += detected_objects_output  # add to string
+                    print(detected_objects_output.strip(','))  # print detected objects to console
 
                 # Write results
                 for *xyxy, conf, cls in reversed(det):
